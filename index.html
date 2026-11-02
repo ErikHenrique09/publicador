@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publicador</title>
+<style>
+:root { --bg: #fbfaf8; --ink: #1d1d1b; --ink2: #55534e; --line: #e2dfd8; --accent: #2f5d8a; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #161615; --ink: #ecebe7; --ink2: #b9b6ae; --line: #34332f; --accent: #8db6dd; }
+}
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 16px 56px; }
+h1 { font-size: 28px; margin: 0 0 4px; }
+h2 { font-size: 19px; margin: 32px 0 6px; padding-top: 20px; border-top: 1px solid var(--line); }
+p, li { color: var(--ink2); }
+a { color: var(--accent); }
+code { font: 14px ui-monospace, Consolas, monospace; }
+</style>
+</head>
+<body>
+<main>
+<h1>Publicador</h1>
+<p>Ferramenta pessoal, de um usuário só, que envia ao YouTube os vídeos que o próprio dono do canal revisou e aprovou.</p>
+
+<h2>O que faz</h2>
+<ul>
+  <li>Envia o vídeo aprovado ao canal do dono como <b>privado</b>, com data e hora para ficar público, título, descrição, tags e thumbnail.</li>
+  <li>Usa a YouTube Data API v3: <code>videos.insert</code>, <code>thumbnails.set</code> e <code>channels.list</code>. Esta última serve só para confirmar em que canal a autorização foi dada.</li>
+  <li>Não lê comentários, inscritos, histórico, e-mail, contatos nem nenhum outro dado da conta.</li>
+</ul>
+
+<h2>Quem usa</h2>
+<p>Só o dono dos canais, nos canais dele. A ferramenta não é oferecida a outras pessoas e não tem cadastro.</p>
+
+<p><a href="privacidade.html">Política de privacidade</a> · Contato: <a href="https://github.com/ErikHenrique09/publicador/issues">abrir uma issue</a></p>
+
+<h2 lang="en">English</h2>
+<div lang="en">
+<p><b>Publicador</b> is a personal, single-user tool. It uploads to YouTube the videos that the channel owner has reviewed and approved. Each video goes up as <b>private</b>, with a scheduled publish time, title, description, tags and thumbnail.</p>
+<p>It uses the YouTube Data API v3: <code>videos.insert</code>, <code>thumbnails.set</code>, and <code>channels.list</code>, which only confirms which channel was authorized. It does not read comments, subscribers, history, email, contacts or any other account data. Only the channel owner uses it, on their own channels. It is not offered to anyone else.</p>
+<p><a href="privacidade.html#en">Privacy policy</a> · Contact: <a href="https://github.com/ErikHenrique09/publicador/issues">open an issue</a></p>
+</div>
+</main>
+</body>
+</html>
